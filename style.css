@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body {
+    height: auto;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 13vh;
+    color: #fff;
+    background-color: #000;
+}
+
+header > h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 2.5rem;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin-right: 2.5rem;
+    height: 65px;
+    width: 200px;
+    font-size: 23px;
+    /* outline: 1px solid red; */
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: auto;
+    min-height: 87vh;
+    width: 100vw;
+    /* outline: 1px solid #fff; */
+}
+
+main > div {
+    position: relative;
+    width: 28vw;
+    height: 60vh;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    /* outline: 1px solid red; */
+}
+
+main > div > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    filter: grayscale(90%);
+}
+
+main > div > h2 {
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left: 38%;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+main > div > button {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 30%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    border: 1.5px solid #fff;
+}
+
+main > div > button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ main > div > img {
+    transition: opacity 0.5s; /* Smooth transition for opacity */
+}
+main > div:hover img {
+    filter: none;
+}
